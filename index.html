@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İş Bul — Gizlilik Politikası</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      color: #374151;
+      line-height: 1.7;
+    }
+    h1 { color: #111827; font-size: 28px; margin-bottom: 4px; }
+    h2 { color: #111827; font-size: 18px; margin-top: 36px; margin-bottom: 8px; }
+    p  { margin: 0 0 12px; }
+    ul { margin: 4px 0 12px; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    .meta { color: #9CA3AF; font-size: 14px; margin-bottom: 32px; }
+    .contact { background: #F3F4F6; border-radius: 8px; padding: 16px; margin-top: 24px; }
+    a { color: #1A56DB; }
+  </style>
+</head>
+<body>
+
+<h1>Gizlilik Politikası</h1>
+<p class="meta">Son güncelleme: Mayıs 2026 &nbsp;|&nbsp; Uygulama: İş Bul (com.isbul.app)</p>
+
+<p>Bu gizlilik politikası, İş Bul mobil uygulamasının ("Uygulama") kişisel verilerinizi nasıl topladığını,
+kullandığını ve koruduğunu açıklamaktadır. Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.</p>
+
+<h2>1. Toplanan Veriler</h2>
+<p>Uygulama aşağıdaki kişisel verileri toplar:</p>
+<ul>
+  <li><strong>E-posta adresi</strong> — hesap oluşturma ve kimlik doğrulama</li>
+  <li><strong>Ad soyad</strong> — profil görüntüleme (isteğe bağlı)</li>
+  <li><strong>Departman ve pozisyon tercihleri</strong> — kişiselleştirilmiş ilan eşleştirme</li>
+  <li><strong>Şehir tercihi</strong> — coğrafi ilan filtreleme</li>
+  <li><strong>Kaydedilen iş ilanları</strong> — yer işareti özelliği</li>
+  <li><strong>CV dosyası (PDF)</strong> — yalnızca analiz anında işlenir; sunucuda depolanmaz</li>
+  <li><strong>CV analiz sonuçları</strong> — çıkarılan pozisyon başlıkları ve deneyim seviyesi</li>
+  <li><strong>Abonelik ve satın alma geçmişi</strong> — Google Play üzerinden premium üyelik doğrulaması</li>
+  <li><strong>Uygulama bildirim kanalı kimliği</strong> — Supabase Realtime anlık bildirim altyapısı</li>
+  <li><strong>KVKK rıza kayıtları</strong> — yasal yükümlülük kapsamında</li>
+</ul>
+
+<h2>2. Verilerin Kullanım Amacı</h2>
+<p>Toplanan veriler yalnızca şu amaçlarla kullanılır:</p>
+<ul>
+  <li>Kişiselleştirilmiş iş ilanı bildirimleri ve eşleştirme</li>
+  <li>CV içeriğine göre uygun ilan önerisi (yalnızca analiz sonuçları saklanır)</li>
+  <li>Uygulamanın temel işlevlerinin sağlanması</li>
+  <li>Premium abonelik yönetimi ve satın alma doğrulaması</li>
+  <li>KVKK kapsamında hukuki yükümlülüklerin yerine getirilmesi</li>
+</ul>
+<p>Verileriniz reklam, profil oluşturma veya pazarlama amacıyla kullanılmaz.</p>
+
+<h2>3. Üçüncü Taraflarla Veri Paylaşımı</h2>
+<p>Kişisel verileriniz aşağıdaki hizmet sağlayıcılarla teknik altyapı gereklilikleri doğrultusunda paylaşılır:</p>
+<ul>
+  <li><strong>Supabase</strong> — veritabanı, kimlik doğrulama ve gerçek zamanlı bildirim altyapısı (<a href="https://supabase.com/privacy">gizlilik politikası</a>)</li>
+  <li><strong>Google Play</strong> — abonelik ve ödeme işlemleri (<a href="https://policies.google.com/privacy">gizlilik politikası</a>)</li>
+  <li><strong>Google Gemini API</strong> — CV analizi; yalnızca analiz anında kullanılır, dosya içeriği depolanmaz (<a href="https://policies.google.com/privacy">gizlilik politikası</a>)</li>
+</ul>
+<p>Bu hizmetlerin kendi gizlilik politikaları geçerlidir. Verileriniz satılmaz ve reklam amaçlı üçüncü taraflarla paylaşılmaz.</p>
+
+<h2>4. Veri Saklama Süresi</h2>
+<ul>
+  <li>Hesap verileri, hesap aktif olduğu süre boyunca saklanır.</li>
+  <li>Bildirim geçmişi 30 gün sonra otomatik olarak silinir.</li>
+  <li>CV dosyası analiz işlemi tamamlandıktan sonra sunucuda saklanmaz.</li>
+  <li>Hesap silindiğinde tüm kişisel veriler kalıcı olarak imha edilir.</li>
+</ul>
+
+<h2>5. Verilerinizin Güvenliği</h2>
+<p>Verileriniz aşağıdaki güvenlik önlemleriyle korunmaktadır:</p>
+<ul>
+  <li>Tüm iletişim TLS/HTTPS ile şifrelenir.</li>
+  <li>Veritabanı erişimi satır düzeyi güvenlik (RLS) ile kısıtlıdır; her kullanıcı yalnızca kendi verisine erişebilir.</li>
+  <li>Premium durum değişiklikleri yalnızca sunucu tarafında gerçekleşir; istemci tarafından değiştirilemez.</li>
+  <li>Supabase Pro altyapısı SOC 2 uyumludur.</li>
+</ul>
+
+<h2>6. KVKK Kapsamındaki Haklarınız</h2>
+<p>6698 Sayılı Kişisel Verilerin Korunması Kanunu kapsamında aşağıdaki haklara sahipsiniz:</p>
+<ul>
+  <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+  <li>İşlenmişse buna ilişkin bilgi talep etme</li>
+  <li>Amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+  <li>Eksik veya yanlış verilerin düzeltilmesini isteme</li>
+  <li>Verilerinizin silinmesini veya yok edilmesini talep etme</li>
+  <li>Verilerinizin işlenmesine itiraz etme</li>
+  <li>Otomatik sistemlerle analiz sonucu aleyhte karar oluşturulmasına itiraz etme</li>
+</ul>
+<p>Hesabınızı ve tüm verilerinizi silmek için: Uygulama → Profil → Hesabı Sil seçeneğini kullanabilirsiniz.</p>
+
+<h2>7. Bildirim İzinleri</h2>
+<p>Uygulama, yeni iş ilanlarını size bildirmek için <strong>POST_NOTIFICATIONS</strong> iznini kullanır.
+Bu izni dilediğiniz zaman cihaz Ayarlar → Uygulamalar → İş Bul → Bildirimler menüsünden iptal edebilirsiniz.
+İzni kaldırmanız uygulamanın diğer özelliklerini etkilemez.</p>
+
+<h2>8. Arka Plan Servisi</h2>
+<p>Uygulama, kapalı olduğunda da bildirim kontrolü yapabilmek için Android WorkManager aracılığıyla her 2 saatte bir
+arka plan görevi çalıştırır. Bu görev yalnızca internet bağlantısı olduğunda çalışır ve yalnızca bildirim
+durumu kontrolü yapar.</p>
+
+<h2>9. Çocukların Gizliliği</h2>
+<p>Bu uygulama 13 yaşın altındaki çocuklara yönelik değildir. Bilerek 13 yaşın altındaki kişilerden
+kişisel veri toplamıyoruz. Böyle bir durumun farkına varırsak ilgili verileri derhal sileriz.</p>
+
+<h2>10. Politika Değişiklikleri</h2>
+<p>Bu politikada yapılacak değişiklikler uygulama içinde ve bu sayfada duyurulacaktır.
+Değişiklikler yayımlanma tarihinde yürürlüğe girer. Uygulamayı kullanmaya devam etmeniz
+güncel politikayı kabul ettiğiniz anlamına gelir.</p>
+
+<div class="contact">
+  <strong>İletişim</strong><br>
+  Gizlilik ve KVKK talepleriniz için:<br>
+  E-posta: <a href="mailto:gpekdemir8@gmail.com">gpekdemir8@gmail.com</a>
+</div>
+
+</body>
+</html>
